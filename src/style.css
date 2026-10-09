@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+.bg1 {
+    background: radial-gradient(
+    circle at center,
+    #1d3045 0%,
+    #1b2b3e 35%,
+    #1c2733 65%,
+    #20252a 100%
+);
+}
+.bg2{
+    background: radial-gradient(
+    circle at top,
+    #32587a 0%,
+    #23384c 22%,
+    #1b2838 50%,
+    #171a21 78%,
+    #0f141b 100%
+);
+}
+.sidebar{
+    right: 0;
+}
