@@ -9,18 +9,19 @@ import AdvancedSearch from '../components/AdvancedSearch'
 import ErrorPage from '../components/ErrorPage'
 
 const router = createBrowserRouter([
-  { path: '/', element: <App />,
+  {
+    path: '/', Component: App,
     children: [
-      { index: true, element: <Navigate to="/store" replace /> },
-      { path: 'store', element: <Store /> },
-      { path: 'about', element: <About /> },
-      { path: 'game/:slug', element: <DetailGames /> },
-      { path: 'basket', element: <GameBasket /> },
-      { path: 'wishlist', element: <WishList /> },
-      { path: 'advancedsearch', element: <AdvancedSearch /> },
+      { index: true, Component: () => <Navigate to="/store" replace /> },
+      { path: 'store', Component: Store },
+      { path: 'about', Component: About },
+      { path: 'game/:slug', Component: DetailGames },
+      { path: 'basket', Component: GameBasket },
+      { path: 'wishlist', Component: WishList },
+      { path: 'advancedsearch', Component: AdvancedSearch },
     ],
   },
-  { path: '*', element: <ErrorPage /> },
+  { path: '*', Component: ErrorPage },
 ])
 
 export default router
