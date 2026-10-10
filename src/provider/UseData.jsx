@@ -12,7 +12,7 @@ function UseData() {
         getData("footer").then(res => setFooterData(res))
     }, [])
 
-    return { product, category, features, footerData }
+    return { product, category, footerData }
 }
 
 export default UseData
