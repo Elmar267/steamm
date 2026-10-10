@@ -10,7 +10,6 @@ function UseData() {
     useEffect(() => {
         getData("products").then(res => setProduct(res))
         getData("category").then(res => setCategory(res))
-        getData("features").then(res => setFeatures(res))
         getData("footer").then(res => setFooterData(res))
     }, [])
 
