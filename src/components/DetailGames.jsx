@@ -8,7 +8,6 @@ function DetailGames() {
     const { addBasket, removeFromBasket, basket } = useContext(BASKET)
     const { addWish, removeFromWishlist, wish } = useContext(WISH)
     const [selectedImage, setSelectedImage] = useState(null)
-
     const game = product.find(item => item.slug === slug)
 
     if(!game){
